@@ -1,4 +1,3 @@
-from typing import Dict, Tuple
 from openai import OpenAI
 from .utils.func import init_messages, welcome_message, select_prompt
 from .utils.personalities import chef_personalities
@@ -43,7 +42,6 @@ messages = init_messages(
 
 continue_chat = True
 while continue_chat:
-    print("\n")
     user_input = input("\n---------\n\nEnter your message:\n\n")
     print("\nAI Chef's response: ")
     messages.append(
